@@ -429,11 +429,11 @@ img {
 }
 
 .form-check-label, .form-check:checked + .check-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-image: url("../images/icon-check.svg");
-  background-size: contain;
-  background-origin: border-box;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-image: url("../images/icon-check.svg");
+    background-size: contain;
+    background-origin: border-box;
 }
 .check-link {
     text-decoration: underline;
