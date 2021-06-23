@@ -22,6 +22,7 @@
     --card-overlay-color: rgba(33, 150, 243, 0.9);
     --form-border-color: rgba(33, 33, 33, 0.2);
     --placeholder-color: rgba(117, 117, 117, 0.5);
+    --
     }
 *,
 *::before,
@@ -336,7 +337,7 @@ img {
     flex-direction: column;
 }
 .label-text {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     color: var(--main-content-color);
 }
 .form-wrapper {
@@ -411,7 +412,8 @@ img {
 .form-check-label {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    width: 200px;
+    margin-top: 20px;
 }
 .form-check {
     margin-top: 20px;
@@ -612,6 +614,7 @@ img {
 .icon-list {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 }
 .icon-item {
     width: 44px;
@@ -894,7 +897,7 @@ img {
 /* Форма футера */
 .form-footer {
     width: 570px;
-    margin-left: 93px;
+    margin-left: auto;
 }
 .footer-block .appeal {
     font-weight: bold;
