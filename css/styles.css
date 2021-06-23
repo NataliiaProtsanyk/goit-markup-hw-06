@@ -80,6 +80,7 @@ img {
     height: 20px;
 }
 
+
 /*Общий логотип */
 .logo {
     color: var(--logo-color);
@@ -94,6 +95,7 @@ img {
 .logo-title {
     color: var(--accent-color);
 }
+
 
 /* Общая навигация */
 .header-contact .container {
@@ -186,6 +188,7 @@ img {
     align-content: center;
 }
 
+
 /* Герой */
 .section-hero {
     background-color: var(--hero-color);
@@ -246,6 +249,8 @@ img {
     cursor: pointer;
     text-shadow: var(--text-shadow);
 }
+
+
 /* Модальное окно */
 
 .backdrop {
@@ -303,6 +308,7 @@ img {
 .close-button:hover,
 .close-button:focus {
   cursor: pointer;
+  fill: var(--accent-color);
 }
 
 
@@ -330,7 +336,7 @@ img {
     flex-direction: column;
 }
 .label-text {
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     color: var(--main-content-color);
 }
 .form-wrapper {
@@ -374,18 +380,41 @@ img {
 }
 /*.form-comment:placeholder-shown {
     color: var(--placeholder-color);
-}*/
+}
 .form-icon:focus {
     fill: var(--accent-color);
 }
-.form-input:focus, .form-comment:focus {
+.form-input:focus, 
+.form-comment:focus,
+.form-icon:focus {
     outline: none;
     border-color: var(--accent-color);
+    fill: var(--accent-color);
+}*/
+.form-input:hover, 
+.form-comment:hover,
+.form-input:focus, 
+.form-comment:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+.form-input + .form-icon,
+.form-input + .form-icon{
+    transition-property:  fill;
+    transition-duration: var(--trn-time);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon{
+    fill: var(--accent-color);
 }
 .form-check-label {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+.form-check {
+    margin-top: 20px;
 }
 .check-icon {
     width: 16px;
@@ -399,7 +428,7 @@ img {
     background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-check:checked + .check-icon {
+.form-check-label, .form-check:checked + .check-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-image: url("../images/icon-check.svg");
@@ -578,6 +607,7 @@ img {
     display: flex;
 }
 
+
 /*Соцсети команды */
 .icon-list {
     display: flex;
@@ -605,8 +635,8 @@ img {
     cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Партнеры */
 
+/* Партнеры */
 .client-title {
     font-family: Roboto;
     font-style: normal;
@@ -634,7 +664,9 @@ img {
     border: 1px solid var(--command-icon-color);
     border-radius: 4px;
     fill: var(--command-icon-color);
-    transition: fill 250ms 
+    transition: border-color 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms 
     cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-item:not(:last-child) {
@@ -736,6 +768,7 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+
 /* Модальные окна портфолио */
 .img-thumb{
     position: relative;
@@ -767,6 +800,7 @@ img {
 .card-link:focus .card-overlay {
   transform: translateY(-100%);
 }
+
 
 /* Footer общий */
 .logo-copyright {
@@ -855,6 +889,7 @@ img {
     background-color: var(--accent-color);
     fill: var(--primary-whit-color);
 }
+
 
 /* Форма футера */
 .form-footer {
