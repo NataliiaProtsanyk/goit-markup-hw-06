@@ -419,6 +419,17 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.form-check {
+    border: 2px solid var(--titel-text-color);
+    border-radius: 2px;
+}
+.form-check:focus {
+    border: 2px solid var(--accent-color);
+}
+.form-check:focus + .check-icon {
+    border: 2px solid var(--accent-color);
+}
+
 .form-check-lable {
     display: flex;
     align-items: center;
@@ -439,7 +450,7 @@ img {
 .form-check:checked + .check-icon {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
-    background-image: url("../images/icon-check.svg");
+    background-image: url("../images/sumbol-defs.svg#icon-check");
     background-size: contain;
     background-origin: border-box;
 }
