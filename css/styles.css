@@ -423,17 +423,22 @@ img {
     border: 2px solid var(--titel-text-color);
     border-radius: 2px;
 }
-.form-check:focus {
-    border: 2px solid var(--accent-color);
-}
 .form-check:focus + .check-icon {
     border: 2px solid var(--accent-color);
 }
-
+.form-check:focus,
+.form-check:hover {
+    border: 2px solid var(--accent-color);
+}
 .form-check-lable {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
 }
 .check-icon {
     display: inline-block;
@@ -450,13 +455,15 @@ img {
 .form-check:checked + .check-icon {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
-    background-image: url("../images/sumbol-defs.svg#icon-check");
+    background-image: url("../images/icon-heck.svg");
     background-size: contain;
+    background-repeat: no-repeat;
     background-origin: border-box;
 }
 .check-link {
     color: var(--accent-color);
     text-decoration: underline;
+    padding-left: 7px;
 }
   .check-link:hover,
   .check-link:focus {
